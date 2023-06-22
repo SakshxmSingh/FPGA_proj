@@ -1,6 +1,11 @@
 #include <matrix.h>
 
-void matrix_mul_hw(hls::stream<AXIS> &input_stream,hls::stream<AXIS> &input_stream){
+void matrix_mul_hw(hls::stream<AXIS> &input_stream,hls::stream<AXIS> &result_stream){
+
+    #pragma HLS INTERFACE axis port=input_stream
+    #pragma HLS INTERFACE axis port=result_stream
+    #pragma HLS INTERFACE ap_ctrl_none port=return
+
     AXIS temp;
     ELEMENT mat1[row1][col1], mat2[row2][col2], result_hw[row1][col2];
     #pragma HLS ARRAY_PARTITION variable=mat1 complete dim=1
