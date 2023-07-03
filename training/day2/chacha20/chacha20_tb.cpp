@@ -20,19 +20,23 @@ void chacha20(uint32_t input_key[SIZE], uint32_t text[SIZE], uint32_t output[SIZ
         for(int j=0; j<4; j++){
             temp_after_round[j] += temp_after_round[j+4];
             temp_after_round[j+12] ^= temp_after_round[j];
-            temp_after_round[j+12] <<<= 16;
+            uint32_t temp = temp_after_round[j+12];
+            temp_after_round[j+12] = (temp << 16) | (temp >> 16);
 
             temp_after_round[j+8] += temp_after_round[j+12];
             temp_after_round[j+4] ^= temp_after_round[j+8];
-            temp_after_round[j+4] <<<= 12;
+            temp = temp_after_round[j+4];
+            temp_after_round[j+4] = (temp << 12) | (temp >> 20);
 
             temp_after_round[j] += temp_after_round[j+4];
             temp_after_round[j+12] ^= temp_after_round[j];
-            temp_after_round[j+12] <<<= 8;
+            temp = temp_after_round[j+12];
+            temp_after_round[j+12] = (temp << 8) | (temp >> 24);
 
             temp_after_round[j+8] += temp_after_round[j+12];
             temp_after_round[j+4] ^= temp_after_round[j+8];
-            temp_after_round[j+4] <<<= 7;
+            temp = temp_after_round[j+4];
+            temp_after_round[j+4] = (temp << 7) | (temp >> 25);
         }
 
         //-----------------------diagonal quarter round----------------------------
@@ -44,19 +48,23 @@ void chacha20(uint32_t input_key[SIZE], uint32_t text[SIZE], uint32_t output[SIZ
         for(int j=0; j<4; j++){
             temp_after_round[j] += temp_after_round[(j+5)%4 + 4];
             temp_after_round[(j+15)%4 + 12] ^= temp_after_round[j];
-            temp_after_round[(j+15)%4 + 12] <<<= 16;
+            uint32_t temp = temp_after_round[(j+15)%4 + 12];
+            temp_after_round[(j+15)%4 + 12] = (temp << 16) | (temp >> 16);
 
             temp_after_round[(j+10)%4 + 8] += temp_after_round[(j+15)%4 + 12];
             temp_after_round[(j+5)%4 + 4] ^= temp_after_round[(j+10)%4 + 8];
-            temp_after_round[(j+5)%4 + 4] <<<= 12;
+            temp = temp_after_round[(j+5)%4 + 4];
+            temp_after_round[(j+5)%4 + 4] = (temp << 12) | (temp >> 20);
 
             temp_after_round[j] += temp_after_round[(j+5)%4 + 4];
             temp_after_round[(j+15)%4 + 12] ^= temp_after_round[j];
-            temp_after_round[(j+15)%4 + 12] <<<= 8;
+            temp = temp_after_round[(j+15)%4 + 12];
+            temp_after_round[(j+15)%4 + 12] = (temp << 8) | (temp >> 24);
 
             temp_after_round[(j+10)%4 + 8] += temp_after_round[(j+15)%4 + 12];
             temp_after_round[(j+5)%4 + 4] ^= temp_after_round[(j+10)%4 + 8];
-            temp_after_round[(j+5)%4 + 4] <<<= 7;
+            temp = temp_after_round[(j+5)%4 + 4];
+            temp_after_round[(j+5)%4 + 4] = (temp << 7) | (temp >> 25);
         }
 
     }
