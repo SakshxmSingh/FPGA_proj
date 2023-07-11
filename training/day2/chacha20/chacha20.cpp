@@ -1,12 +1,13 @@
 #include <chacha20.h>
 #include <stdint.h>
-#include <string.h>
+
 
 void serialize(uint32_t input[], uint8_t output[], size_t outputSize){
     size_t byteIndex = 0;
 
     for (size_t i = 0; i < 16; ++i) {
         uint32_t value = input[i];
+    #pragma HLS PIPELINE
         for (size_t j = 0; j < sizeof(uint32_t); ++j) {
             uint8_t byte = (value >> (j * 8)) & 0xFF;
             output[byteIndex++] = byte;
@@ -16,7 +17,8 @@ void serialize(uint32_t input[], uint8_t output[], size_t outputSize){
 }
 
 void serializeString(const char input[], uint8_t outputArray[], size_t outputSize) {
-    size_t inputLen = strlen(input);
+    size_t inputLen = sizeof(input) / sizeof(input[0]);
+    inputLen--;
 
     // Ensure outputSize is sufficient to hold the serialized elements
     if (outputSize < inputLen) {
@@ -30,28 +32,32 @@ void serializeString(const char input[], uint8_t outputArray[], size_t outputSiz
     }
 }
 
-void uint8_textToUint32(const char input[], uint32_t outputArray[], size_t outputSize) {
-    size_t inputLen = strlen(input);
-    size_t numElements = inputLen / 9;  // Each element in the input string has length 9 ("XX XXXXXX ")
+void convertToHexArray(const char* text, uint8_t hexArray[], int length) {
+    int i = 0;
+    int j = 0;
 
-    // Split the input into individual uint8_t elements
-    uint8_t uint8Array[numElements * 4];
-    size_t i = 0;
-    const char* delimiter = " ";
-    char* token = strtok((char*)input, delimiter);
-    while (token != NULL && i < numElements * 4) {
-        uint8Array[i++] = (uint8_t)strtol(token, NULL, 16);
-        token = strtok(NULL, delimiter);
+    while (text[i] != '\0' && j < length) {
+        // Convert two characters to a hex value
+        uint8_t value = 0;
+        int k;
+    #pragma HLS PIPELINE
+        for (k = 0; k < 2; k++) {
+            char c = text[i++];
+            value <<= 4;
+            if (c >= '0' && c <= '9')
+                value |= c - '0';
+            else if (c >= 'a' && c <= 'f')
+                value |= c - 'a' + 10;
+            else if (c >= 'A' && c <= 'F')
+                value |= c - 'A' + 10;
+        }
+
+        hexArray[j++] = value;
+
+        // Skip any spaces
+        while (text[i] == ' ')
+            i++;
     }
-
-    // Group uint8_t elements into uint32_t elements
-    for (size_t j = 0; j < numElements; j++) {
-        outputArray[j] = (uint32_t)(uint8Array[j * 4 + 3] << 24) |
-                        (uint32_t)(uint8Array[j * 4 + 2] << 16) |
-                        (uint32_t)(uint8Array[j * 4 + 1] << 8) |
-                        (uint32_t)uint8Array[j * 4];
-    }
-
 }
 
 void convertToUint32(const uint8_t input[], size_t inputSize, uint32_t output[]) {
@@ -91,6 +97,8 @@ void chacha20(uint32_t input_key[SIZE], uint32_t text[SIZE], uint32_t output[SIZ
         }
 
         for (int i = 0; i < 10; i++) {
+    #pragma HLS PIPELINE
+            
 
             //-----------------------column quarter round----------------------------
             // a = input_key[0]
@@ -182,7 +190,7 @@ void chacha20_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
     #pragma HLS INTERFACE ap_ctrl_none port=return
 
     uint32_t state_matrix[SIZE], output_32[4][SIZE], text[SIZE*4];
-    #pragma HLS ARRAY_PARTITION variable=input complete dim=1
+    #pragma HLS ARRAY_PARTITION variable=state_matrix complete dim=1
     #pragma HLS ARRAY_PARTITION variable=text complete dim=1
 
     // Read input stream

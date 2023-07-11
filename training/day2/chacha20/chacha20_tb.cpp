@@ -17,7 +17,8 @@ void serialize(uint32_t input[], uint8_t output[], size_t outputSize){
 }
 
 void serializeString(const char input[], uint8_t outputArray[], size_t outputSize) {
-    size_t inputLen = strlen(input);
+    size_t inputLen = sizeof(input) / sizeof(input[0]);
+    inputLen--;
 
     // Ensure outputSize is sufficient to hold the serialized elements
     if (outputSize < inputLen) {
@@ -31,28 +32,31 @@ void serializeString(const char input[], uint8_t outputArray[], size_t outputSiz
     }
 }
 
-void uint8_textToUint32(const char input[], uint32_t outputArray[], size_t outputSize) {
-    size_t inputLen = strlen(input);
-    size_t numElements = inputLen / 9;  // Each element in the input string has length 9 ("XX XXXXXX ")
+void convertToHexArray(const char* text, uint8_t hexArray[], int length) {
+    int i = 0;
+    int j = 0;
 
-    // Split the input into individual uint8_t elements
-    uint8_t uint8Array[numElements * 4];
-    size_t i = 0;
-    const char* delimiter = " ";
-    char* token = strtok((char*)input, delimiter);
-    while (token != NULL && i < numElements * 4) {
-        uint8Array[i++] = (uint8_t)strtol(token, NULL, 16);
-        token = strtok(NULL, delimiter);
+    while (text[i] != '\0' && j < length) {
+        // Convert two characters to a hex value
+        uint8_t value = 0;
+        int k;
+        for (k = 0; k < 2; k++) {
+            char c = text[i++];
+            value <<= 4;
+            if (c >= '0' && c <= '9')
+                value |= c - '0';
+            else if (c >= 'a' && c <= 'f')
+                value |= c - 'a' + 10;
+            else if (c >= 'A' && c <= 'F')
+                value |= c - 'A' + 10;
+        }
+
+        hexArray[j++] = value;
+
+        // Skip any spaces
+        while (text[i] == ' ')
+            i++;
     }
-
-    // Group uint8_t elements into uint32_t elements
-    for (size_t j = 0; j < numElements; j++) {
-        outputArray[j] = (uint32_t)(uint8Array[j * 4 + 3] << 24) |
-                        (uint32_t)(uint8Array[j * 4 + 2] << 16) |
-                        (uint32_t)(uint8Array[j * 4 + 1] << 8) |
-                        (uint32_t)uint8Array[j * 4];
-    }
-
 }
 
 void convertToUint32(const uint8_t input[], size_t inputSize, uint32_t output[]) {
@@ -195,7 +199,7 @@ int main(){
     // const char plain_text[] = "Ladies and Gentlemen of the class of '99: If I could offer you only one tip for the future, sunscreen would be it.";
     // size_t counter_int = 1;
 
-    size_t text_size = strlen(plain_text);
+    size_t text_size = sizeof(plain_text)/sizeof(plain_text[0]) - 1;
     uint8_t text_8[text_size];
     serializeString(plain_text, text_8, text_size);
 
@@ -206,8 +210,14 @@ int main(){
 
     uint32_t key[8];
     uint32_t nonce[3];
-    uint8_textToUint32(nonce_text, nonce, 3);
-    uint8_textToUint32(key_text, key, 8);
+    uint8_t nonce_8[12];
+    uint8_t key_8[32];
+    // uint8_textToUint32(nonce_text, nonce, 3);
+    convertToHexArray(nonce_text, nonce_8, 12);
+    convertToHexArray(key_text, key_8, 32);
+
+    convertToUint32(nonce_8, 12, nonce);
+    convertToUint32(key_8, 32, key);
 
     state_matrix[12] = (uint32_t)counter_int;
 
