@@ -255,9 +255,6 @@ int main(){
             }
 
             if(arr1Size != arr1Zeroes){
-                if(boolean == -1){
-                }
-
                 while(boolean >=0){
                     int temp[arr1Size - arr1Zeroes - 1];
                     for(int k = 0; k < arr1Size - arr1Zeroes - 1; k++){
@@ -950,7 +947,7 @@ int main(){
 
     //reading result stream
     for(int i = 0; i < 16; i++){
-        tag_hw[i] = result_stream.read().data();
+        tag_hw[i] = result_stream.read().data;
     }
 
     printf("\n---------------------------tag_hw---------------------------------\n");

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source/>
+  <testbench>
+    <originFiles name="poly1305_tb.cpp" path="D:\Saksham\Programming_stuff\NetSec_Lab\FPGA_proj\poly1305\hls\poly1305_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,923 @@
+<profile>
+
+<RTLDesignHierarchy>
+<TopModule>
+<ModuleName>poly1305_hw</ModuleName>
+</TopModule>
+</RTLDesignHierarchy>
+
+<ModuleInformation>
+<Module>
+<Name>poly1305_hw</Name>
+<PerformanceEstimates>
+<SummaryOfTimingAnalysis>
+<TargetClockPeriod>10.00</TargetClockPeriod>
+<ClockUncertainty>1.25</ClockUncertainty>
+<EstimatedClockPeriod>8.611</EstimatedClockPeriod>
+</SummaryOfTimingAnalysis>
+<SummaryOfOverallLatency>
+<Best-caseLatency>undef</Best-caseLatency>
+<Average-caseLatency>undef</Average-caseLatency>
+<Worst-caseLatency>undef</Worst-caseLatency>
+<PipelineInitiationInterval>undef</PipelineInitiationInterval>
+<PipelineType>none</PipelineType>
+</SummaryOfOverallLatency>
+<SummaryOfLoopLatency>
+<Loop1>
+<Name>Loop 1</Name>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
+<IterationLatency>1</IterationLatency>
+<PipelineDepth>1</PipelineDepth>
+</Loop1>
+<Loop2>
+<Name>Loop 2</Name>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
+<IterationLatency>1</IterationLatency>
+<PipelineDepth>1</PipelineDepth>
+</Loop2>
+<Loop3>
+<Name>Loop 3</Name>
+<TripCount>32</TripCount>
+<Latency>32</Latency>
+<IterationLatency>1</IterationLatency>
+<PipelineDepth>1</PipelineDepth>
+</Loop3>
+<Loop4>
+<Name>Loop 4</Name>
+<TripCount>16</TripCount>
+<Latency>32</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop4>
+<memset_acc>
+<Name>memset_acc</Name>
+<TripCount>17</TripCount>
+<Latency>16</Latency>
+<IterationLatency>1</IterationLatency>
+<PipelineDepth>1</PipelineDepth>
+</memset_acc>
+<Loop6>
+<Name>Loop 6</Name>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
+<IterationLatency>undef</IterationLatency>
+<PipelineDepth>undef</PipelineDepth>
+<Loop6.1>
+<Name>Loop 6.1</Name>
+<TripCount>16</TripCount>
+<Latency>32</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop6.1>
+<Loop6.2>
+<Name>Loop 6.2</Name>
+<TripCount>17</TripCount>
+<Latency>34</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop6.2>
+<Loop6.3>
+<Name>Loop 6.3</Name>
+<TripCount>33</TripCount>
+<Latency>33</Latency>
+<IterationLatency>1</IterationLatency>
+<PipelineDepth>1</PipelineDepth>
+</Loop6.3>
+<Loop6.4>
+<Name>Loop 6.4</Name>
+<TripCount>16</TripCount>
+<Latency>1408 ~ 1680</Latency>
+<IterationLatency>
+<range>
+<min>88</min>
+<max>105</max>
+</range>
+</IterationLatency>
+<PipelineDepth>88 ~ 105</PipelineDepth>
+<Loop6.4.1>
+<Name>Loop 6.4.1</Name>
+<TripCount>17</TripCount>
+<Latency>85 ~ 102</Latency>
+<IterationLatency>
+<range>
+<min>5</min>
+<max>6</max>
+</range>
+</IterationLatency>
+<PipelineDepth>5 ~ 6</PipelineDepth>
+</Loop6.4.1>
+</Loop6.4>
+<Loop6.5>
+<Name>Loop 6.5</Name>
+<TripCount>33</TripCount>
+<Latency>66</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop6.5>
+<Loop6.6>
+<Name>Loop 6.6</Name>
+<TripCount>
+<range>
+<min>1</min>
+<max>33</max>
+</range>
+</TripCount>
+<Latency>2 ~ 67</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop6.6>
+<Loop6.7>
+<Name>Loop 6.7</Name>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop6.7>
+<Loop6.8>
+<Name>Loop 6.8</Name>
+<TripCount>
+<range>
+<min>1</min>
+<max>33</max>
+</range>
+</TripCount>
+<Latency>2 ~ 67</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop6.8>
+<Loop6.9>
+<Name>Loop 6.9</Name>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
+<IterationLatency>undef</IterationLatency>
+<PipelineDepth>undef</PipelineDepth>
+<Loop6.9.1>
+<Name>Loop 6.9.1</Name>
+<TripCount>
+<range>
+<min>0</min>
+<max>32</max>
+</range>
+</TripCount>
+<Latency>0 ~ 32</Latency>
+<IterationLatency>1</IterationLatency>
+<PipelineDepth>1</PipelineDepth>
+</Loop6.9.1>
+<Loop6.9.2>
+<Name>Loop 6.9.2</Name>
+<TripCount>17</TripCount>
+<Latency>51 ~ 68</Latency>
+<IterationLatency>
+<range>
+<min>3</min>
+<max>4</max>
+</range>
+</IterationLatency>
+<PipelineDepth>3 ~ 4</PipelineDepth>
+</Loop6.9.2>
+<Loop6.9.3>
+<Name>Loop 6.9.3</Name>
+<TripCount>
+<range>
+<min>0</min>
+<max>15</max>
+</range>
+</TripCount>
+<Latency>0 ~ 15</Latency>
+<IterationLatency>1</IterationLatency>
+<PipelineDepth>1</PipelineDepth>
+</Loop6.9.3>
+<Loop6.9.4>
+<Name>Loop 6.9.4</Name>
+<TripCount>
+<range>
+<min>0</min>
+<max>15</max>
+</range>
+</TripCount>
+<Latency>0 ~ 2085</Latency>
+<IterationLatency>
+<range>
+<min>105</min>
+<max>139</max>
+</range>
+</IterationLatency>
+<PipelineDepth>105 ~ 139</PipelineDepth>
+<Loop6.9.4.1>
+<Name>Loop 6.9.4.1</Name>
+<TripCount>17</TripCount>
+<Latency>102 ~ 136</Latency>
+<IterationLatency>
+<range>
+<min>6</min>
+<max>8</max>
+</range>
+</IterationLatency>
+<PipelineDepth>6 ~ 8</PipelineDepth>
+</Loop6.9.4.1>
+</Loop6.9.4>
+<Loop6.9.5>
+<Name>Loop 6.9.5</Name>
+<TripCount>
+<range>
+<min>18</min>
+<max>63</max>
+</range>
+</TripCount>
+<Latency>54 ~ 252</Latency>
+<IterationLatency>
+<range>
+<min>3</min>
+<max>4</max>
+</range>
+</IterationLatency>
+<PipelineDepth>3 ~ 4</PipelineDepth>
+</Loop6.9.5>
+<Loop6.9.6>
+<Name>Loop 6.9.6</Name>
+<TripCount>32</TripCount>
+<Latency>96</Latency>
+<IterationLatency>3</IterationLatency>
+<PipelineDepth>3</PipelineDepth>
+</Loop6.9.6>
+<Loop6.9.7>
+<Name>Loop 6.9.7</Name>
+<TripCount>
+<range>
+<min>1</min>
+<max>33</max>
+</range>
+</TripCount>
+<Latency>2 ~ 67</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop6.9.7>
+<Loop6.9.8>
+<Name>Loop 6.9.8</Name>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop6.9.8>
+</Loop6.9>
+<Loop6.10>
+<Name>Loop 6.10</Name>
+<TripCount>17</TripCount>
+<Latency>34</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop6.10>
+</Loop6>
+<Loop7>
+<Name>Loop 7</Name>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
+<IterationLatency>undef</IterationLatency>
+<PipelineDepth>undef</PipelineDepth>
+<Loop7.1>
+<Name>Loop 7.1</Name>
+<TripCount>16</TripCount>
+<Latency>32</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop7.1>
+<Loop7.2>
+<Name>Loop 7.2</Name>
+<TripCount>17</TripCount>
+<Latency>34</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop7.2>
+<Loop7.3>
+<Name>Loop 7.3</Name>
+<TripCount>33</TripCount>
+<Latency>33</Latency>
+<IterationLatency>1</IterationLatency>
+<PipelineDepth>1</PipelineDepth>
+</Loop7.3>
+<Loop7.4>
+<Name>Loop 7.4</Name>
+<TripCount>16</TripCount>
+<Latency>1408 ~ 1680</Latency>
+<IterationLatency>
+<range>
+<min>88</min>
+<max>105</max>
+</range>
+</IterationLatency>
+<PipelineDepth>88 ~ 105</PipelineDepth>
+<Loop7.4.1>
+<Name>Loop 7.4.1</Name>
+<TripCount>17</TripCount>
+<Latency>85 ~ 102</Latency>
+<IterationLatency>
+<range>
+<min>5</min>
+<max>6</max>
+</range>
+</IterationLatency>
+<PipelineDepth>5 ~ 6</PipelineDepth>
+</Loop7.4.1>
+</Loop7.4>
+<Loop7.5>
+<Name>Loop 7.5</Name>
+<TripCount>33</TripCount>
+<Latency>66</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop7.5>
+<Loop7.6>
+<Name>Loop 7.6</Name>
+<TripCount>
+<range>
+<min>1</min>
+<max>33</max>
+</range>
+</TripCount>
+<Latency>2 ~ 67</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop7.6>
+<Loop7.7>
+<Name>Loop 7.7</Name>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop7.7>
+<Loop7.8>
+<Name>Loop 7.8</Name>
+<TripCount>
+<range>
+<min>1</min>
+<max>33</max>
+</range>
+</TripCount>
+<Latency>2 ~ 67</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop7.8>
+<Loop7.9>
+<Name>Loop 7.9</Name>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
+<IterationLatency>undef</IterationLatency>
+<PipelineDepth>undef</PipelineDepth>
+<Loop7.9.1>
+<Name>Loop 7.9.1</Name>
+<TripCount>
+<range>
+<min>0</min>
+<max>32</max>
+</range>
+</TripCount>
+<Latency>0 ~ 32</Latency>
+<IterationLatency>1</IterationLatency>
+<PipelineDepth>1</PipelineDepth>
+</Loop7.9.1>
+<Loop7.9.2>
+<Name>Loop 7.9.2</Name>
+<TripCount>17</TripCount>
+<Latency>51 ~ 68</Latency>
+<IterationLatency>
+<range>
+<min>3</min>
+<max>4</max>
+</range>
+</IterationLatency>
+<PipelineDepth>3 ~ 4</PipelineDepth>
+</Loop7.9.2>
+<Loop7.9.3>
+<Name>Loop 7.9.3</Name>
+<TripCount>
+<range>
+<min>0</min>
+<max>15</max>
+</range>
+</TripCount>
+<Latency>0 ~ 15</Latency>
+<IterationLatency>1</IterationLatency>
+<PipelineDepth>1</PipelineDepth>
+</Loop7.9.3>
+<Loop7.9.4>
+<Name>Loop 7.9.4</Name>
+<TripCount>
+<range>
+<min>0</min>
+<max>15</max>
+</range>
+</TripCount>
+<Latency>0 ~ 2085</Latency>
+<IterationLatency>
+<range>
+<min>105</min>
+<max>139</max>
+</range>
+</IterationLatency>
+<PipelineDepth>105 ~ 139</PipelineDepth>
+<Loop7.9.4.1>
+<Name>Loop 7.9.4.1</Name>
+<TripCount>17</TripCount>
+<Latency>102 ~ 136</Latency>
+<IterationLatency>
+<range>
+<min>6</min>
+<max>8</max>
+</range>
+</IterationLatency>
+<PipelineDepth>6 ~ 8</PipelineDepth>
+</Loop7.9.4.1>
+</Loop7.9.4>
+<Loop7.9.5>
+<Name>Loop 7.9.5</Name>
+<TripCount>
+<range>
+<min>18</min>
+<max>63</max>
+</range>
+</TripCount>
+<Latency>54 ~ 252</Latency>
+<IterationLatency>
+<range>
+<min>3</min>
+<max>4</max>
+</range>
+</IterationLatency>
+<PipelineDepth>3 ~ 4</PipelineDepth>
+</Loop7.9.5>
+<Loop7.9.6>
+<Name>Loop 7.9.6</Name>
+<TripCount>32</TripCount>
+<Latency>96</Latency>
+<IterationLatency>3</IterationLatency>
+<PipelineDepth>3</PipelineDepth>
+</Loop7.9.6>
+<Loop7.9.7>
+<Name>Loop 7.9.7</Name>
+<TripCount>
+<range>
+<min>1</min>
+<max>33</max>
+</range>
+</TripCount>
+<Latency>2 ~ 67</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop7.9.7>
+<Loop7.9.8>
+<Name>Loop 7.9.8</Name>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop7.9.8>
+</Loop7.9>
+<Loop7.10>
+<Name>Loop 7.10</Name>
+<TripCount>17</TripCount>
+<Latency>34</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop7.10>
+</Loop7>
+<Loop8>
+<Name>Loop 8</Name>
+<TripCount>
+<range>
+<min>0</min>
+<max>15</max>
+</range>
+</TripCount>
+<Latency>0 ~ 30</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop8>
+<Loop9>
+<Name>Loop 9</Name>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
+<IterationLatency>1</IterationLatency>
+<PipelineDepth>1</PipelineDepth>
+</Loop9>
+<Loop10>
+<Name>Loop 10</Name>
+<TripCount>17</TripCount>
+<Latency>34</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop10>
+<Loop11>
+<Name>Loop 11</Name>
+<TripCount>33</TripCount>
+<Latency>33</Latency>
+<IterationLatency>1</IterationLatency>
+<PipelineDepth>1</PipelineDepth>
+</Loop11>
+<Loop12>
+<Name>Loop 12</Name>
+<TripCount>16</TripCount>
+<Latency>1408 ~ 1680</Latency>
+<IterationLatency>
+<range>
+<min>88</min>
+<max>105</max>
+</range>
+</IterationLatency>
+<PipelineDepth>88 ~ 105</PipelineDepth>
+<Loop12.1>
+<Name>Loop 12.1</Name>
+<TripCount>17</TripCount>
+<Latency>85 ~ 102</Latency>
+<IterationLatency>
+<range>
+<min>5</min>
+<max>6</max>
+</range>
+</IterationLatency>
+<PipelineDepth>5 ~ 6</PipelineDepth>
+</Loop12.1>
+</Loop12>
+<Loop13>
+<Name>Loop 13</Name>
+<TripCount>33</TripCount>
+<Latency>66</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop13>
+<Loop14>
+<Name>Loop 14</Name>
+<TripCount>
+<range>
+<min>1</min>
+<max>33</max>
+</range>
+</TripCount>
+<Latency>2 ~ 67</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop14>
+<Loop15>
+<Name>Loop 15</Name>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
+<IterationLatency>undef</IterationLatency>
+<PipelineDepth>undef</PipelineDepth>
+<Loop15.1>
+<Name>Loop 15.1</Name>
+<TripCount>
+<range>
+<min>0</min>
+<max>32</max>
+</range>
+</TripCount>
+<Latency>0 ~ 32</Latency>
+<IterationLatency>1</IterationLatency>
+<PipelineDepth>1</PipelineDepth>
+</Loop15.1>
+<Loop15.2>
+<Name>Loop 15.2</Name>
+<TripCount>17</TripCount>
+<Latency>51 ~ 68</Latency>
+<IterationLatency>
+<range>
+<min>3</min>
+<max>4</max>
+</range>
+</IterationLatency>
+<PipelineDepth>3 ~ 4</PipelineDepth>
+</Loop15.2>
+<Loop15.3>
+<Name>Loop 15.3</Name>
+<TripCount>
+<range>
+<min>0</min>
+<max>15</max>
+</range>
+</TripCount>
+<Latency>0 ~ 15</Latency>
+<IterationLatency>1</IterationLatency>
+<PipelineDepth>1</PipelineDepth>
+</Loop15.3>
+<Loop15.4>
+<Name>Loop 15.4</Name>
+<TripCount>
+<range>
+<min>0</min>
+<max>15</max>
+</range>
+</TripCount>
+<Latency>0 ~ 2085</Latency>
+<IterationLatency>
+<range>
+<min>105</min>
+<max>139</max>
+</range>
+</IterationLatency>
+<PipelineDepth>105 ~ 139</PipelineDepth>
+<Loop15.4.1>
+<Name>Loop 15.4.1</Name>
+<TripCount>17</TripCount>
+<Latency>102 ~ 136</Latency>
+<IterationLatency>
+<range>
+<min>6</min>
+<max>8</max>
+</range>
+</IterationLatency>
+<PipelineDepth>6 ~ 8</PipelineDepth>
+</Loop15.4.1>
+</Loop15.4>
+<Loop15.5>
+<Name>Loop 15.5</Name>
+<TripCount>
+<range>
+<min>18</min>
+<max>32</max>
+</range>
+</TripCount>
+<Latency>54 ~ 128</Latency>
+<IterationLatency>
+<range>
+<min>3</min>
+<max>4</max>
+</range>
+</IterationLatency>
+<PipelineDepth>3 ~ 4</PipelineDepth>
+</Loop15.5>
+<Loop15.6>
+<Name>Loop 15.6</Name>
+<TripCount>32</TripCount>
+<Latency>96</Latency>
+<IterationLatency>3</IterationLatency>
+<PipelineDepth>3</PipelineDepth>
+</Loop15.6>
+<Loop15.7>
+<Name>Loop 15.7</Name>
+<TripCount>
+<range>
+<min>1</min>
+<max>33</max>
+</range>
+</TripCount>
+<Latency>2 ~ 67</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop15.7>
+<Loop15.8>
+<Name>Loop 15.8</Name>
+<TripCount>undef</TripCount>
+<Latency>undef</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop15.8>
+</Loop15>
+<Loop16>
+<Name>Loop 16</Name>
+<TripCount>17</TripCount>
+<Latency>34</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop16>
+<Loop17>
+<Name>Loop 17</Name>
+<TripCount>16</TripCount>
+<Latency>32</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop17>
+<Loop18>
+<Name>Loop 18</Name>
+<TripCount>16</TripCount>
+<Latency>32</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop18>
+</SummaryOfLoopLatency>
+</PerformanceEstimates>
+<AreaEstimates>
+<Resources>
+<BRAM_18K>17</BRAM_18K>
+<DSP48E>3</DSP48E>
+<FF>3706</FF>
+<LUT>9265</LUT>
+<URAM>0</URAM>
+</Resources>
+</AreaEstimates>
+<InterfaceSummary>
+<RtlPorts>
+<name>ap_clk</name>
+<Object>poly1305_hw</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_rst</name>
+<Object>poly1305_hw</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_start</name>
+<Object>poly1305_hw</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>poly1305_hw</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>poly1305_hw</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>poly1305_hw</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>input_stream_V_data_dout</name>
+<Object>input_stream_V_data</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>8</Bits>
+<Attribute>control</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>input_stream_V_data_empty_n</name>
+<Object>input_stream_V_data</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>input_stream_V_data_read</name>
+<Object>input_stream_V_data</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>input_stream_V_last_V_dout</name>
+<Object>input_stream_V_last_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>input_stream_V_last_V_empty_n</name>
+<Object>input_stream_V_last_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>input_stream_V_last_V_read</name>
+<Object>input_stream_V_last_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>result_stream_V_data_din</name>
+<Object>result_stream_V_data</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>8</Bits>
+<Attribute>control</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>result_stream_V_data_full_n</name>
+<Object>result_stream_V_data</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>result_stream_V_data_write</name>
+<Object>result_stream_V_data</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>result_stream_V_last_V_din</name>
+<Object>result_stream_V_last_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>result_stream_V_last_V_full_n</name>
+<Object>result_stream_V_last_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>result_stream_V_last_V_write</name>
+<Object>result_stream_V_last_V</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+<CType>int</CType>
+</RtlPorts>
+</InterfaceSummary>
+</Module>
+</ModuleInformation>
+
+</profile>

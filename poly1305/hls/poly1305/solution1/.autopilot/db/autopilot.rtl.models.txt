@@ -1,0 +1,12 @@
+poly1305_hw_mac_mibs
+poly1305_hw_arr2
+poly1305_hw_key
+poly1305_hw_text
+poly1305_hw_r
+poly1305_hw_s
+poly1305_hw_acc
+poly1305_hw_mul
+poly1305_hw_arr1
+poly1305_hw_temp
+poly1305_hw_fullArr
+poly1305_hw
