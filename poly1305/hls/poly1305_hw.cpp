@@ -2,6 +2,19 @@
 
 void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stream){
     uint8_t key[32];
+    bool flag = false;
+
+    //--------------Read input stream----------------
+    int textLength = 0;
+    while(flag == false){
+        bool temp = input_stream.read().last;
+        if(temp == true){
+            flag = true;
+        }
+        textLength += temp.data;
+    }   
+
+    
     uint8_t text[textLength];
 
     //read input stream
@@ -863,7 +876,7 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
         }
         result_stream.write(temp);
     }
-    
+
 }
 
 
