@@ -5,11 +5,11 @@
 ############################################################
 open_project poly1305
 set_top poly1305_hw
-add_files poly1305/.apc/.src/poly1305_head.h
-add_files poly1305/.apc/.src/poly1305_hw.cpp
-add_files -tb poly1305_tb.cpp
+add_files poly1305/poly1305_head.h
+add_files poly1305/poly1305_hw.cpp
+add_files -tb poly1305_tb.cpp -cflags "-Wno-unknown-pragmas"
 open_solution "solution1"
-set_part {xc7vx485tffg1157-1}
+set_part {xc7vx485t-ffg1157-1}
 create_clock -period 10 -name default
 #source "./poly1305/solution1/directives.tcl"
 csim_design

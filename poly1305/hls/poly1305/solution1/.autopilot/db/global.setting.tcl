@@ -14,7 +14,7 @@ set NbRWValue 0
 set intNbAccess 0
 set NewDSPMapping 1
 set HasDSPModule 1
-set ResetLevelFlag 1
+set ResetLevelFlag 0
 set ResetStyle control
 set ResetSyncFlag 1
 set ResetRegisterFlag 0
@@ -40,7 +40,7 @@ set SCTraceFileName mytrace
 set SCTraceFileFormat vcd
 set SCTraceOption all
 set TargetInfo xc7vx485t:-ffg1157:-1
-set SourceFiles {sc {} c ../.apc/.src/poly1305_hw.cpp}
+set SourceFiles {sc {} c ../poly1305_hw.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile D:/Saksham/Programming_stuff/NetSec_Lab/FPGA_proj/poly1305/hls/poly1305/solution1/solution1.directive
 set TBFiles {verilog ../../poly1305_tb.cpp bc ../../poly1305_tb.cpp vhdl ../../poly1305_tb.cpp sc ../../poly1305_tb.cpp cas ../../poly1305_tb.cpp c {}}

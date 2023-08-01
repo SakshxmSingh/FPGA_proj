@@ -7,12 +7,12 @@ library ieee;
 use ieee.std_logic_1164.all; 
 use ieee.std_logic_unsigned.all;
 
-entity poly1305_hw_text_ram is 
+entity poly1305_hw_textBcud_ram is 
     generic(
-            MEM_TYPE    : string := "block"; 
+            MEM_TYPE    : string := "distributed"; 
             DWIDTH     : integer := 8; 
-            AWIDTH     : integer := 10; 
-            MEM_SIZE    : integer := 1000
+            AWIDTH     : integer := 5; 
+            MEM_SIZE    : integer := 17
     ); 
     port (
           addr0     : in std_logic_vector(AWIDTH-1 downto 0); 
@@ -25,14 +25,14 @@ entity poly1305_hw_text_ram is
 end entity; 
 
 
-architecture rtl of poly1305_hw_text_ram is 
+architecture rtl of poly1305_hw_textBcud_ram is 
 
 signal addr0_tmp : std_logic_vector(AWIDTH-1 downto 0); 
 type mem_array is array (0 to MEM_SIZE-1) of std_logic_vector (DWIDTH-1 downto 0); 
 shared variable ram : mem_array;
 
 attribute syn_ramstyle : string; 
-attribute syn_ramstyle of ram : variable is "block_ram";
+attribute syn_ramstyle of ram : variable is "select_ram";
 attribute ram_style : string;
 attribute ram_style of ram : variable is MEM_TYPE;
 
@@ -69,11 +69,11 @@ end rtl;
 Library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity poly1305_hw_text is
+entity poly1305_hw_textBcud is
     generic (
         DataWidth : INTEGER := 8;
-        AddressRange : INTEGER := 1000;
-        AddressWidth : INTEGER := 10);
+        AddressRange : INTEGER := 17;
+        AddressWidth : INTEGER := 5);
     port (
         reset : IN STD_LOGIC;
         clk : IN STD_LOGIC;
@@ -84,8 +84,8 @@ entity poly1305_hw_text is
         q0 : OUT STD_LOGIC_VECTOR(DataWidth - 1 DOWNTO 0));
 end entity;
 
-architecture arch of poly1305_hw_text is
-    component poly1305_hw_text_ram is
+architecture arch of poly1305_hw_textBcud is
+    component poly1305_hw_textBcud_ram is
         port (
             clk : IN STD_LOGIC;
             addr0 : IN STD_LOGIC_VECTOR;
@@ -98,7 +98,7 @@ architecture arch of poly1305_hw_text is
 
 
 begin
-    poly1305_hw_text_ram_U :  component poly1305_hw_text_ram
+    poly1305_hw_textBcud_ram_U :  component poly1305_hw_textBcud_ram
     port map (
         clk => clk,
         addr0 => address0,

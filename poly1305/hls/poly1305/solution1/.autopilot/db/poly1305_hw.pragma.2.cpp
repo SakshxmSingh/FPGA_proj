@@ -1,5 +1,5 @@
-# 1 "poly1305/.apc/.src/poly1305_hw.cpp"
-# 1 "poly1305/.apc/.src/poly1305_hw.cpp" 1
+# 1 "poly1305/poly1305_hw.cpp"
+# 1 "poly1305/poly1305_hw.cpp" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 152 "<built-in>" 3
@@ -150,8 +150,8 @@ extern "C" {
 }
 # 9 "<command line>" 2
 # 1 "<built-in>" 2
-# 1 "poly1305/.apc/.src/poly1305_hw.cpp" 2
-# 1 "poly1305/.apc/.src/poly1305_head.h" 1
+# 1 "poly1305/poly1305_hw.cpp" 2
+# 1 "poly1305/poly1305_head.h" 1
 # 1 "E:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdio.h" 1 3
 
 
@@ -650,7 +650,7 @@ extern "C" {
 
 # 1 "E:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\_mingw_print_pop.h" 1 3
 # 511 "E:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdio.h" 2 3
-# 2 "poly1305/.apc/.src/poly1305_head.h" 2
+# 2 "poly1305/poly1305_head.h" 2
 # 1 "E:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/../lib/clang/3.1/include\\stdint.h" 1 3 4
 # 33 "E:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/../lib/clang/3.1/include\\stdint.h" 3 4
 # 1 "E:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdint.h" 1 3 4
@@ -708,7 +708,7 @@ __extension__ typedef unsigned long long uint_fast64_t;
 __extension__ typedef long long intmax_t;
 __extension__ typedef unsigned long long uintmax_t;
 # 33 "E:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/../lib/clang/3.1/include\\stdint.h" 2 3 4
-# 3 "poly1305/.apc/.src/poly1305_head.h" 2
+# 3 "poly1305/poly1305_head.h" 2
 # 1 "E:/Xilinx/Vivado/2019.1/common/technology/autopilot\\hls_stream.h" 1
 # 66 "E:/Xilinx/Vivado/2019.1/common/technology/autopilot\\hls_stream.h"
 # 1 "E:/Xilinx/Vivado/2019.1/common/technology/autopilot/etc/autopilot_enum.h" 1
@@ -906,7 +906,7 @@ class stream
 
 
 }
-# 4 "poly1305/.apc/.src/poly1305_head.h" 2
+# 4 "poly1305/poly1305_head.h" 2
 # 1 "E:/Xilinx/Vivado/2019.1/common/technology/autopilot\\ap_int.h" 1
 # 54 "E:/Xilinx/Vivado/2019.1/common/technology/autopilot\\ap_int.h"
 # 1 "E:/Xilinx/Vivado/2019.1/common/technology/autopilot\\ap_common.h" 1
@@ -7114,7 +7114,7 @@ inline bool operator!=(
 }
 # 399 "E:/Xilinx/Vivado/2019.1/common/technology/autopilot\\ap_fixed.h" 2
 # 368 "E:/Xilinx/Vivado/2019.1/common/technology/autopilot\\ap_int.h" 2
-# 5 "poly1305/.apc/.src/poly1305_head.h" 2
+# 5 "poly1305/poly1305_head.h" 2
 
 struct axis{
     uint8_t data;
@@ -7122,10 +7122,45 @@ struct axis{
 };
 
 void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stream);
-# 2 "poly1305/.apc/.src/poly1305_hw.cpp" 2
+
+void textNumToHexArr(char text[], uint8_t hexArray[], int output_length) {
+    int i = 0;
+    int j = 0;
+
+    while (text[i] != '\0' && j < output_length) {
+        uint8_t value = 0;
+        int k;
+        for (k = 0; k < 2; k++) {
+            char c = text[i++];
+            value <<= 4;
+            if (c >= '0' && c <= '9')
+                value |= c - '0';
+            else if (c >= 'a' && c <= 'f')
+                value |= c - 'a' + 10;
+            else if (c >= 'A' && c <= 'F')
+                value |= c - 'A' + 10;
+        }
+
+        hexArray[j++] = value;
+
+        while (text[i] == ' ')
+            i++;
+    }
+}
+
+void textToHex(char text[], uint8_t hexArray[], int output_length){
+    for(int i = 0; i < output_length; i++){
+        hexArray[i] = (uint8_t)text[i];
+    }
+}
+# 2 "poly1305/poly1305_hw.cpp" 2
 
 void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stream){
-    uint8_t key[32];
+_ssdm_op_SpecInterface(&input_stream, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(&result_stream, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(0, "ap_ctrl_none", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+
+ uint8_t key[32];
     bool flag = false;
 
 
@@ -7149,16 +7184,21 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
         key[i] = input_stream.read().data;
     }
 
+_ssdm_SpecArrayPartition( key, 1, "COMPLETE", 0, "");
+_ssdm_SpecArrayPartition( text, 1, "COMPLETE", 0, "");
 
-    uint8_t r[16], s[16];
+
+ uint8_t r[16], s[16];
 
     for(int i = 0; i<16; i++){
         r[i] = key[i];
         s[i] = key[i+16];
     }
 
+_ssdm_SpecArrayPartition( r, 1, "COMPLETE", 0, "");
 
-    r[3] &= 0x0f;
+
+ r[3] &= 0x0f;
     r[7] &= 0x0f;
     r[11] &= 0x0f;
     r[15] &= 0x0f;
@@ -7171,7 +7211,8 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
 
     if(textLength%16==0){
         for(int i = 0; i < textLength/16; i++){
-            uint8_t textBlock[17];
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+ uint8_t textBlock[17];
             for(int j = 0; j < 16; j++){
                 textBlock[j] = text[(16*i) + j];
             }
@@ -7205,7 +7246,8 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
             addCarry = 0;
             for(int i = 0; i < 16; i++){
                 uint8_t mulCarry = 0;
-                for(int j =0; j < 17; j++){
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+ for(int j =0; j < 17; j++){
                     uint16_t mulTemp = (accSum[j] * r[i]) + mulCarry;
                     if(mulTemp > 0xFF){
                         mulCarry = (uint8_t)(mulTemp / 0x100);
@@ -7337,7 +7379,8 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
 
                         addCarry = 0;
                         for(int i = 0; i < arr1Size - arr1Zeroes - arr2Size - 1; i++){
-                            int mulCarry = 0;
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+ int mulCarry = 0;
                             for(int j =0; j < arr2Size; j++){
                                 int mulTemp = (arr2[j] * fullArr[i]) + mulCarry;
                                 if(mulTemp > 0xFF){
@@ -7447,7 +7490,8 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
     else{
 
         for(int i = 0; i < textLength/16; i++){
-            uint8_t textBlock[17];
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+ uint8_t textBlock[17];
             for(int j = 0; j < 16; j++){
                 textBlock[j] = text[(16*i) + j];
             }
@@ -7487,7 +7531,8 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
 
             addCarry = 0;
             for(int i = 0; i < 16; i++){
-                uint8_t mulCarry = 0;
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+ uint8_t mulCarry = 0;
                 for(int j =0; j < 17; j++){
                     uint16_t mulTemp = (accSum[j] * r[i]) + mulCarry;
                     if(mulTemp > 0xFF){
@@ -7618,7 +7663,8 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
 
                         addCarry = 0;
                         for(int i = 0; i < arr1Size - arr1Zeroes - arr2Size - 1; i++){
-                            int mulCarry = 0;
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+ int mulCarry = 0;
                             for(int j =0; j < arr2Size; j++){
                                 int mulTemp = (arr2[j] * fullArr[i]) + mulCarry;
                                 if(mulTemp > 0xFF){
@@ -7767,7 +7813,8 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
 
         addCarry = 0;
         for(int i = 0; i < 16; i++){
-            uint8_t mulCarry = 0;
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+ uint8_t mulCarry = 0;
             for(int j =0; j < 17; j++){
                 uint16_t mulTemp = (accSum[j] * r[i]) + mulCarry;
                 if(mulTemp > 0xFF){
@@ -7833,8 +7880,6 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
         }
 
         if(arr1Zeroes != arr1Size){
-
-
             while(boolean >=0){
                 int temp[40];
                 for(int k = 0; k < arr1Size - arr1Zeroes - 1; k++){
@@ -7862,7 +7907,8 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
 
                     addCarry = 0;
                     for(int i = 0; i < arr1Size - arr1Zeroes - arr2Size - 1; i++){
-                        int mulCarry = 0;
+_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
+ int mulCarry = 0;
                         for(int j =0; j < arr2Size; j++){
                             int mulTemp = (arr2[j] * fullArr[i]) + mulCarry;
                             if(mulTemp > 0xFF){

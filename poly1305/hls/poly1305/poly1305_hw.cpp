@@ -1,6 +1,10 @@
 #include "poly1305_head.h"
 
 void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stream){
+    #pragma HLS INTERFACE axis port=input_stream
+    #pragma HLS INTERFACE axis port=result_stream
+    #pragma HLS INTERFACE ap_ctrl_none port=return
+
     uint8_t key[32];
     bool flag = false;
 
@@ -25,6 +29,9 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
         key[i] = input_stream.read().data;
     }
 
+    #pragma HLS ARRAY_PARTITION variable=key complete dim=1
+    #pragma HLS ARRAY_PARTITION variable=text complete dim=1
+
     //--------------Splitting the key---------------
     uint8_t r[16], s[16];
 
@@ -32,6 +39,8 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
         r[i] = key[i];
         s[i] = key[i+16];
     }
+
+    #pragma HLS ARRAY_PARTITION variable=r complete dim=1
 
     //------------------clamping r------------------
     r[3] &= 0x0f;               //lesser than 16, first 4 bits need to be 0
@@ -47,6 +56,7 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
 
     if(textLength%16==0){
         for(int i = 0; i < textLength/16; i++){
+    #pragma HLS PIPELINE 
             uint8_t textBlock[17];
             for(int j = 0; j < 16; j++){
                 textBlock[j] = text[(16*i) + j];
@@ -81,6 +91,7 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
             addCarry = 0;
             for(int i = 0; i < 16; i++){
                 uint8_t mulCarry = 0;
+        #pragma HLS PIPELINE
                 for(int j =0; j < 17; j++){
                     uint16_t mulTemp = (accSum[j] * r[i]) + mulCarry;
                     if(mulTemp > 0xFF){
@@ -213,6 +224,7 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
 
                         addCarry = 0;
                         for(int i = 0; i < arr1Size - arr1Zeroes - arr2Size - 1; i++){
+                    #pragma HLS PIPELINE
                             int mulCarry = 0;
                             for(int j =0; j < arr2Size; j++){
                                 int mulTemp = (arr2[j] * fullArr[i]) + mulCarry;
@@ -323,6 +335,7 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
     else{
     //------------------even cases------------------------- 
         for(int i = 0; i < textLength/16; i++){
+    #pragma HLS PIPELINE
             uint8_t textBlock[17];
             for(int j = 0; j < 16; j++){
                 textBlock[j] = text[(16*i) + j];
@@ -363,6 +376,7 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
 
             addCarry = 0;
             for(int i = 0; i < 16; i++){
+        #pragma HLS PIPELINE
                 uint8_t mulCarry = 0;
                 for(int j =0; j < 17; j++){
                     uint16_t mulTemp = (accSum[j] * r[i]) + mulCarry;
@@ -494,6 +508,7 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
 
                         addCarry = 0;
                         for(int i = 0; i < arr1Size - arr1Zeroes - arr2Size - 1; i++){
+                    #pragma HLS PIPELINE
                             int mulCarry = 0;
                             for(int j =0; j < arr2Size; j++){
                                 int mulTemp = (arr2[j] * fullArr[i]) + mulCarry;
@@ -643,6 +658,7 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
 
         addCarry = 0;
         for(int i = 0; i < 16; i++){
+    #pragma HLS PIPELINE
             uint8_t mulCarry = 0;
             for(int j =0; j < 17; j++){
                 uint16_t mulTemp = (accSum[j] * r[i]) + mulCarry;
@@ -709,8 +725,6 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
         }
 
         if(arr1Zeroes != arr1Size){
-
-
             while(boolean >=0){
                 int temp[40];
                 for(int k = 0; k < arr1Size - arr1Zeroes - 1; k++){
@@ -738,6 +752,7 @@ void poly1305_hw(hls::stream<axis> &input_stream, hls::stream<axis> &result_stre
 
                     addCarry = 0;
                     for(int i = 0; i < arr1Size - arr1Zeroes - arr2Size - 1; i++){
+                #pragma HLS PIPELINE
                         int mulCarry = 0;
                         for(int j =0; j < arr2Size; j++){
                             int mulTemp = (arr2[j] * fullArr[i]) + mulCarry;

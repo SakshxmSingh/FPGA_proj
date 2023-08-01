@@ -428,3 +428,500 @@ INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:12 
 INFO: [VHDL 208-304] Generating VHDL RTL for poly1305_hw.
 INFO: [VLOG 209-307] Generating Verilog RTL for poly1305_hw.
 INFO: [HLS 200-112] Total elapsed time: 34.432 seconds; peak allocated memory: 133.921 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'E:/Xilinx/Vivado/2019.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7vx485t-ffg1157-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'E:/Xilinx/Vivado/2019.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7vx485t-ffg1157-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Cannot find source file poly1305/.apc/.src/poly1305_hw.cpp; skipping it.
+ERROR: [HLS 200-70] Cannot find any design unit to elaborate.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'E:/Xilinx/Vivado/2019.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7vx485t-ffg1157-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'E:/Xilinx/Vivado/2019.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7vx485t-ffg1157-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Cannot find source file poly1305/.apc/.src/poly1305_hw.cpp; skipping it.
+ERROR: [HLS 200-70] Cannot find any design unit to elaborate.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'E:/Xilinx/Vivado/2019.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7vx485t-ffg1157-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Cannot find source file poly1305/.apc/.src/poly1305_hw.cpp; skipping it.
+ERROR: [HLS 200-70] Cannot find any design unit to elaborate.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'E:/Xilinx/Vivado/2019.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7vx485t-ffg1157-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'E:/Xilinx/Vivado/2019.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7vx485t-ffg1157-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'E:/Xilinx/Vivado/2019.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7vx485t-ffg1157-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'E:/Xilinx/Vivado/2019.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7vx485t-ffg1157-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+WARNING: [HLS 200-40] Cannot find source file poly1305/.apc/.src/poly1305_hw.cpp; skipping it.
+ERROR: [HLS 200-70] Cannot find any design unit to elaborate.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'E:/Xilinx/Vivado/2019.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7vx485t-ffg1157-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'E:/Xilinx/Vivado/2019.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7vx485t-ffg1157-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'poly1305/poly1305_hw.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from poly1305/poly1305_hw.cpp:1:
+poly1305/poly1305_hw.cpp:14:28: error: member reference base type 'bool' is not a structure or union
+        textLength += temp.data;
+                      ~~~~ ^
+1 error generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'E:/Xilinx/Vivado/2019.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7vx485t-ffg1157-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'E:/Xilinx/Vivado/2019.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7vx485t-ffg1157-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'poly1305/poly1305_hw.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 178.566 ; gain = 87.156
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 178.566 ; gain = 87.156
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:21 . Memory (MB): peak = 178.566 ; gain = 87.156
+INFO: [HLS 200-10] Checking synthesizability ...
+ERROR: [SYNCHK 200-31] poly1305/poly1305_hw.cpp:18: dynamic memory allocation/deallocation is not supported: variable 'text'.
+ERROR: [SYNCHK 200-61] poly1305/poly1305_hw.cpp:22: unsupported memory access on variable 'text' which is (or contains) an array with unknown size at compile time.
+ERROR: [SYNCHK 200-21] poly1305/poly1305_hw.cpp:190: The GCC/LLVM intrinsic function 'stacksave' is not supported, only a subset of intrinsics is supported, please check the coding style guide for more information.
+INFO: [SYNCHK 200-10] 3 error(s), 0 warning(s).
+ERROR: [HLS 200-70] Synthesizability check failed.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'E:/Xilinx/Vivado/2019.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7vx485t-ffg1157-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'poly1305/poly1305_hw.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 178.457 ; gain = 87.008
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 178.457 ; gain = 87.008
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 178.457 ; gain = 87.008
+INFO: [HLS 200-10] Checking synthesizability ...
+ERROR: [SYNCHK 200-21] poly1305/poly1305_hw.cpp:190: The GCC/LLVM intrinsic function 'stacksave' is not supported, only a subset of intrinsics is supported, please check the coding style guide for more information.
+ERROR: [SYNCHK 200-31] poly1305/poly1305_hw.cpp:190: dynamic memory allocation/deallocation is not supported: variable 'temp'.
+ERROR: [SYNCHK 200-61] poly1305/poly1305_hw.cpp:192: unsupported memory access on variable 'temp' which is (or contains) an array with unknown size at compile time.
+INFO: [SYNCHK 200-10] 3 error(s), 0 warning(s).
+ERROR: [HLS 200-70] Synthesizability check failed.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'E:/Xilinx/Vivado/2019.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7vx485t-ffg1157-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'poly1305/poly1305_hw.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 178.555 ; gain = 87.109
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 178.555 ; gain = 87.109
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 178.555 ; gain = 87.109
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 178.555 ; gain = 87.109
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:66:64) to (poly1305/poly1305_hw.cpp:65:36) in function 'poly1305_hw'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:85:69) to (poly1305/poly1305_hw.cpp:93:21) in function 'poly1305_hw'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:98:80) to (poly1305/poly1305_hw.cpp:107:21) in function 'poly1305_hw'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:231:88) to (poly1305/poly1305_hw.cpp:240:33) in function 'poly1305_hw'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:342:64) to (poly1305/poly1305_hw.cpp:341:36) in function 'poly1305_hw'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:368:69) to (poly1305/poly1305_hw.cpp:376:21) in function 'poly1305_hw'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:381:80) to (poly1305/poly1305_hw.cpp:390:21) in function 'poly1305_hw'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:512:88) to (poly1305/poly1305_hw.cpp:521:33) in function 'poly1305_hw'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:623:60) to (poly1305/poly1305_hw.cpp:622:32) in function 'poly1305_hw'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:648:65) to (poly1305/poly1305_hw.cpp:656:17) in function 'poly1305_hw'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:661:76) to (poly1305/poly1305_hw.cpp:670:17) in function 'poly1305_hw'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:756:84) to (poly1305/poly1305_hw.cpp:765:29) in function 'poly1305_hw'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:852:48) to (poly1305/poly1305_hw.cpp:851:28) in function 'poly1305_hw'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 178.555 ; gain = 87.109
+WARNING: [XFORM 203-561] Updating loop upper bound from -1 to 63 for loop 'Loop-5-8-4' in function 'poly1305_hw'.
+WARNING: [XFORM 203-561] Updating loop upper bound from -1 to 63 for loop 'Loop-6-8-4' in function 'poly1305_hw'.
+WARNING: [XFORM 203-561] Updating loop upper bound from -1 to 32 for loop 'Loop-14-4' in function 'poly1305_hw'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 178.555 ; gain = 87.109
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'poly1305_hw' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'poly1305_hw' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 17.073 seconds; current allocated memory: 120.671 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 68 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.929 seconds; current allocated memory: 125.721 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'poly1305_hw' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'poly1305_hw/input_stream_V_data' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'poly1305_hw/input_stream_V_last_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'poly1305_hw/result_stream_V_data' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'poly1305_hw/result_stream_V_last_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'poly1305_hw' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'poly1305_hw_textBlock' to 'poly1305_hw_textBbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'poly1305_hw_textBlock_1' to 'poly1305_hw_textBcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'poly1305_hw_accSum_1' to 'poly1305_hw_accSudEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'poly1305_hw_fullArr_1' to 'poly1305_hw_fullAeOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'poly1305_hw_textBlock_2' to 'poly1305_hw_textBfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'poly1305_hw_accSum81' to 'poly1305_hw_accSug8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'poly1305_hw_fullArr_2' to 'poly1305_hw_fullAhbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'poly1305_hw_mac_muladd_8ns_8ns_8ns_16_1_1' to 'poly1305_hw_mac_mibs' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'poly1305_hw_mac_mibs': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'poly1305_hw'.
+INFO: [HLS 200-111]  Elapsed time: 1.478 seconds; current allocated memory: 133.877 MB.
+INFO: [RTMG 210-279] Implementing memory 'poly1305_hw_arr2_rom' using distributed ROMs.
+INFO: [RTMG 210-278] Implementing memory 'poly1305_hw_key_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'poly1305_hw_text_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'poly1305_hw_r_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'poly1305_hw_s_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'poly1305_hw_acc_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'poly1305_hw_mul_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'poly1305_hw_arr1_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'poly1305_hw_temp_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'poly1305_hw_fullArr_ram (RAM)' using distributed RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:12 ; elapsed = 00:00:26 . Memory (MB): peak = 223.465 ; gain = 132.020
+INFO: [VHDL 208-304] Generating VHDL RTL for poly1305_hw.
+INFO: [VLOG 209-307] Generating Verilog RTL for poly1305_hw.
+INFO: [HLS 200-112] Total elapsed time: 26.174 seconds; peak allocated memory: 133.877 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'E:/Xilinx/Vivado/2019.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7vx485t-ffg1157-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'E:/Xilinx/Vivado/2019.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+INFO: [HLS 200-10] Setting target device to 'xc7vx485t-ffg1157-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'poly1305/poly1305_hw.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 178.469 ; gain = 87.016
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 178.469 ; gain = 87.016
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 178.469 ; gain = 87.016
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 178.469 ; gain = 87.016
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-6' (poly1305/poly1305_hw.cpp:58) in function 'poly1305_hw' for pipelining.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-6.5' (poly1305/poly1305_hw.cpp:92) because its parent loop or function is pipelined.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-7' (poly1305/poly1305_hw.cpp:337) in function 'poly1305_hw' for pipelining.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-7.6' (poly1305/poly1305_hw.cpp:378) because its parent loop or function is pipelined.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-14' (poly1305/poly1305_hw.cpp:660) in function 'poly1305_hw' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-18.4' (poly1305/poly1305_hw.cpp:754) in function 'poly1305_hw' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.1' (poly1305/poly1305_hw.cpp:61) in function 'poly1305_hw' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.2' (poly1305/poly1305_hw.cpp:66) in function 'poly1305_hw' completely with a factor of 17.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.3' (poly1305/poly1305_hw.cpp:75) in function 'poly1305_hw' completely with a factor of 17.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.4' (poly1305/poly1305_hw.cpp:87) in function 'poly1305_hw' completely with a factor of 33.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.5' (poly1305/poly1305_hw.cpp:92) in function 'poly1305_hw' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.5.1' (poly1305/poly1305_hw.cpp:95) in function 'poly1305_hw' completely with a factor of 17.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.6' (poly1305/poly1305_hw.cpp:125) in function 'poly1305_hw' completely with a factor of 33.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.7' (poly1305/poly1305_hw.cpp:133) in function 'poly1305_hw' completely with a factor of 33.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.8' (poly1305/poly1305_hw.cpp:146) in function 'poly1305_hw' completely with a factor of 33.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-6.9' (poly1305/poly1305_hw.cpp:167) in function 'poly1305_hw' completely: variable loop bound.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.10' (poly1305/poly1305_hw.cpp:182) in function 'poly1305_hw' completely with a factor of 33.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-6.11' (poly1305/poly1305_hw.cpp:200) in function 'poly1305_hw' completely: variable loop bound.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-6.11.1' (poly1305/poly1305_hw.cpp:202) in function 'poly1305_hw': cannot completely unroll a loop with a variable trip count.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.11.2' (poly1305/poly1305_hw.cpp:207) in function 'poly1305_hw' completely with a factor of 17.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-6.11.3' (poly1305/poly1305_hw.cpp:221) in function 'poly1305_hw': cannot completely unroll a loop with a variable trip count.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-6.11.4' (poly1305/poly1305_hw.cpp:226) in function 'poly1305_hw': cannot completely unroll a loop with a variable trip count.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.11.4.1' (poly1305/poly1305_hw.cpp:229) in function 'poly1305_hw' completely with a factor of 17.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-6.11.5' (poly1305/poly1305_hw.cpp:259) in function 'poly1305_hw': cannot completely unroll a loop with a variable trip count.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.11.6' (poly1305/poly1305_hw.cpp:272) in function 'poly1305_hw' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.11.7' (poly1305/poly1305_hw.cpp:282) in function 'poly1305_hw' completely with a factor of 33.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-6.11.8' (poly1305/poly1305_hw.cpp:303) in function 'poly1305_hw' completely: variable loop bound.
+INFO: [HLS 200-489] Unrolling loop 'Loop-6.12' (poly1305/poly1305_hw.cpp:325) in function 'poly1305_hw' completely with a factor of 17.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.1' (poly1305/poly1305_hw.cpp:340) in function 'poly1305_hw' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.2' (poly1305/poly1305_hw.cpp:345) in function 'poly1305_hw' completely with a factor of 17.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.3' (poly1305/poly1305_hw.cpp:354) in function 'poly1305_hw' completely with a factor of 17.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.4' (poly1305/poly1305_hw.cpp:365) in function 'poly1305_hw' completely with a factor of 17.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.5' (poly1305/poly1305_hw.cpp:373) in function 'poly1305_hw' completely with a factor of 33.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.6' (poly1305/poly1305_hw.cpp:378) in function 'poly1305_hw' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.6.1' (poly1305/poly1305_hw.cpp:381) in function 'poly1305_hw' completely with a factor of 17.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.7' (poly1305/poly1305_hw.cpp:412) in function 'poly1305_hw' completely with a factor of 33.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.8' (poly1305/poly1305_hw.cpp:420) in function 'poly1305_hw' completely with a factor of 33.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.9' (poly1305/poly1305_hw.cpp:433) in function 'poly1305_hw' completely with a factor of 33.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-7.10' (poly1305/poly1305_hw.cpp:454) in function 'poly1305_hw' completely: variable loop bound.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.11' (poly1305/poly1305_hw.cpp:469) in function 'poly1305_hw' completely with a factor of 33.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-7.12' (poly1305/poly1305_hw.cpp:484) in function 'poly1305_hw' completely: variable loop bound.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-7.12.1' (poly1305/poly1305_hw.cpp:486) in function 'poly1305_hw': cannot completely unroll a loop with a variable trip count.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.12.2' (poly1305/poly1305_hw.cpp:491) in function 'poly1305_hw' completely with a factor of 17.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-7.12.3' (poly1305/poly1305_hw.cpp:505) in function 'poly1305_hw': cannot completely unroll a loop with a variable trip count.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-7.12.4' (poly1305/poly1305_hw.cpp:510) in function 'poly1305_hw': cannot completely unroll a loop with a variable trip count.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.12.4.1' (poly1305/poly1305_hw.cpp:513) in function 'poly1305_hw' completely with a factor of 17.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-7.12.5' (poly1305/poly1305_hw.cpp:543) in function 'poly1305_hw': cannot completely unroll a loop with a variable trip count.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.12.6' (poly1305/poly1305_hw.cpp:556) in function 'poly1305_hw' completely with a factor of 32.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.12.7' (poly1305/poly1305_hw.cpp:566) in function 'poly1305_hw' completely with a factor of 33.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-7.12.8' (poly1305/poly1305_hw.cpp:587) in function 'poly1305_hw' completely: variable loop bound.
+INFO: [HLS 200-489] Unrolling loop 'Loop-7.13' (poly1305/poly1305_hw.cpp:608) in function 'poly1305_hw' completely with a factor of 17.
+INFO: [HLS 200-489] Unrolling loop 'Loop-14.1' (poly1305/poly1305_hw.cpp:663) in function 'poly1305_hw' completely with a factor of 17.
+INFO: [HLS 200-489] Unrolling loop 'Loop-18.4.1' (poly1305/poly1305_hw.cpp:757) in function 'poly1305_hw' completely with a factor of 17.
+INFO: [XFORM 203-102] Partitioning array 'textBlock' (poly1305/poly1305_hw.cpp:60) automatically.
+INFO: [XFORM 203-102] Partitioning array 'accSum' (poly1305/poly1305_hw.cpp:74) automatically.
+INFO: [XFORM 203-102] Partitioning array 'mul' (poly1305/poly1305_hw.cpp:86) automatically.
+INFO: [XFORM 203-102] Partitioning array 'textBlock31' (poly1305/poly1305_hw.cpp:339) automatically.
+INFO: [XFORM 203-102] Partitioning array 'accSum.1' (poly1305/poly1305_hw.cpp:353) automatically.
+INFO: [XFORM 203-102] Partitioning array 'mul.1' (poly1305/poly1305_hw.cpp:372) automatically.
+INFO: [XFORM 203-101] Partitioning array 'key' (poly1305/poly1305_hw.cpp:8) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'text' (poly1305/poly1305_hw.cpp:22) accessed through non-constant indices on dimension 1 (poly1305/poly1305_hw.cpp:341:17), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'text' (poly1305/poly1305_hw.cpp:22) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'r' (poly1305/poly1305_hw.cpp:36) in dimension 1 completely.
+WARNING: [XFORM 203-561] Updating loop upper bound from -1 to 32 for loop 'Loop-17-4' in function 'poly1305_hw'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:226:87) to (poly1305/poly1305_hw.cpp:238:33) in function 'poly1305_hw'... converting 33 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:243:88) to (poly1305/poly1305_hw.cpp:252:33) in function 'poly1305_hw'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:283:25) to (poly1305/poly1305_hw.cpp:296:21) in function 'poly1305_hw'... converting 34 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:83:17) to (poly1305/poly1305_hw.cpp:160:13) in function 'poly1305_hw'... converting 1118 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:183:17) to (poly1305/poly1305_hw.cpp:196:13) in function 'poly1305_hw'... converting 34 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:510:87) to (poly1305/poly1305_hw.cpp:522:33) in function 'poly1305_hw'... converting 33 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:527:88) to (poly1305/poly1305_hw.cpp:536:33) in function 'poly1305_hw'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:567:25) to (poly1305/poly1305_hw.cpp:580:21) in function 'poly1305_hw'... converting 34 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:362:17) to (poly1305/poly1305_hw.cpp:447:13) in function 'poly1305_hw'... converting 1118 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:470:17) to (poly1305/poly1305_hw.cpp:483:13) in function 'poly1305_hw'... converting 34 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:638:60) to (poly1305/poly1305_hw.cpp:637:32) in function 'poly1305_hw'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:660:37) to (poly1305/poly1305_hw.cpp:672:17) in function 'poly1305_hw'... converting 67 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:677:76) to (poly1305/poly1305_hw.cpp:686:17) in function 'poly1305_hw'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:754:83) to (poly1305/poly1305_hw.cpp:766:29) in function 'poly1305_hw'... converting 33 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:771:84) to (poly1305/poly1305_hw.cpp:780:29) in function 'poly1305_hw'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (poly1305/poly1305_hw.cpp:867:48) to (poly1305/poly1305_hw.cpp:866:28) in function 'poly1305_hw'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:04:24 ; elapsed = 00:04:37 . Memory (MB): peak = 430.516 ; gain = 339.062
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-6.2' (poly1305/poly1305_hw.cpp:200:17) in function 'poly1305_hw' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-6' (poly1305/poly1305_hw.cpp:58:22) in function 'poly1305_hw' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-7.2' (poly1305/poly1305_hw.cpp:484:17) in function 'poly1305_hw' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-7' (poly1305/poly1305_hw.cpp:337:22) in function 'poly1305_hw' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-15' (poly1305/poly1305_hw.cpp:728:13) in function 'poly1305_hw' : 
+
+more than one sub loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:09:32 ; elapsed = 00:09:46 . Memory (MB): peak = 489.340 ; gain = 397.887
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'poly1305_hw' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'poly1305_hw' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Loop contains subloop(s) not being unrolled or flattened.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 7.2.3'.
+WARNING: [SCHED 204-68] The II Violation in module 'poly1305_hw' (Loop: Loop 7.2.3): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'select' operation ('select_ln528_15', poly1305/poly1305_hw.cpp:528) and 'add' operation ('add_ln527', poly1305/poly1305_hw.cpp:527).
+WARNING: [SCHED 204-68] The II Violation in module 'poly1305_hw' (Loop: Loop 7.2.3): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between 'select' operation ('select_ln528_15', poly1305/poly1305_hw.cpp:528) and 'add' operation ('add_ln527', poly1305/poly1305_hw.cpp:527).
+WARNING: [SCHED 204-68] The II Violation in module 'poly1305_hw' (Loop: Loop 7.2.3): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between 'select' operation ('select_ln528_15', poly1305/poly1305_hw.cpp:528) and 'add' operation ('add_ln527', poly1305/poly1305_hw.cpp:527).
+WARNING: [SCHED 204-68] The II Violation in module 'poly1305_hw' (Loop: Loop 7.2.3): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between 'select' operation ('select_ln528_15', poly1305/poly1305_hw.cpp:528) and 'add' operation ('add_ln527', poly1305/poly1305_hw.cpp:527).
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('temp_1_load_1', poly1305/poly1305_hw.cpp:527) on array 'temp', poly1305/poly1305_hw.cpp:485 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'temp_1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 20, Depth = 20.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 12'.
+WARNING: [SCHED 204-68] The II Violation in module 'poly1305_hw' (Loop: Loop 12): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'store' operation ('mul_addr_1_write_ln687', poly1305/poly1305_hw.cpp:687) of variable 'add_ln687_1', poly1305/poly1305_hw.cpp:687 on array 'mul', poly1305/poly1305_hw.cpp:654 and 'load' operation ('mul_load_18', poly1305/poly1305_hw.cpp:687) on array 'mul', poly1305/poly1305_hw.cpp:654.
+WARNING: [SCHED 204-68] The II Violation in module 'poly1305_hw' (Loop: Loop 12): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between 'store' operation ('mul_addr_4_write_ln684', poly1305/poly1305_hw.cpp:684) of variable 'add_ln684_1', poly1305/poly1305_hw.cpp:684 on array 'mul', poly1305/poly1305_hw.cpp:654 and 'load' operation ('mul_load', poly1305/poly1305_hw.cpp:677) on array 'mul', poly1305/poly1305_hw.cpp:654.
+WARNING: [SCHED 204-68] The II Violation in module 'poly1305_hw' (Loop: Loop 12): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between 'store' operation ('addCarry80_2_write_ln689', poly1305/poly1305_hw.cpp:689) of constant 0 on local variable 'addCarry80_2' and 'load' operation ('addCarry80_2_load', poly1305/poly1305_hw.cpp:677) on local variable 'addCarry80_2'.
+WARNING: [SCHED 204-68] The II Violation in module 'poly1305_hw' (Loop: Loop 12): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between 'store' operation ('addCarry80_2_write_ln689', poly1305/poly1305_hw.cpp:689) of constant 0 on local variable 'addCarry80_2' and 'load' operation ('addCarry80_2_load', poly1305/poly1305_hw.cpp:677) on local variable 'addCarry80_2'.
+WARNING: [SCHED 204-69] Unable to schedule 'store' operation ('mul_addr_6_write_ln684', poly1305/poly1305_hw.cpp:684) of variable 'add_ln684_3', poly1305/poly1305_hw.cpp:684 on array 'mul', poly1305/poly1305_hw.cpp:654 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'mul'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 19, Depth = 19.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 15.4'.
+WARNING: [SCHED 204-68] The II Violation in module 'poly1305_hw' (Loop: Loop 15.4): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'select' operation ('select_ln772_15', poly1305/poly1305_hw.cpp:772) and 'add' operation ('add_ln771', poly1305/poly1305_hw.cpp:771).
+WARNING: [SCHED 204-68] The II Violation in module 'poly1305_hw' (Loop: Loop 15.4): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between 'select' operation ('select_ln772_15', poly1305/poly1305_hw.cpp:772) and 'add' operation ('add_ln771', poly1305/poly1305_hw.cpp:771).
+WARNING: [SCHED 204-68] The II Violation in module 'poly1305_hw' (Loop: Loop 15.4): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between 'select' operation ('select_ln772_15', poly1305/poly1305_hw.cpp:772) and 'add' operation ('add_ln771', poly1305/poly1305_hw.cpp:771).
+WARNING: [SCHED 204-68] The II Violation in module 'poly1305_hw' (Loop: Loop 15.4): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between 'select' operation ('select_ln772_15', poly1305/poly1305_hw.cpp:772) and 'add' operation ('add_ln771', poly1305/poly1305_hw.cpp:771).
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('temp_2_load_1', poly1305/poly1305_hw.cpp:771) on array 'temp', poly1305/poly1305_hw.cpp:729 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'temp_2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 20, Depth = 20.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Loop contains subloop(s) not being unrolled or flattened.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 6.2.3'.
+WARNING: [SCHED 204-68] The II Violation in module 'poly1305_hw' (Loop: Loop 6.2.3): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'select' operation ('select_ln244_15', poly1305/poly1305_hw.cpp:244) and 'add' operation ('add_ln243', poly1305/poly1305_hw.cpp:243).
+WARNING: [SCHED 204-68] The II Violation in module 'poly1305_hw' (Loop: Loop 6.2.3): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between 'select' operation ('select_ln244_15', poly1305/poly1305_hw.cpp:244) and 'add' operation ('add_ln243', poly1305/poly1305_hw.cpp:243).
+WARNING: [SCHED 204-68] The II Violation in module 'poly1305_hw' (Loop: Loop 6.2.3): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between 'select' operation ('select_ln244_15', poly1305/poly1305_hw.cpp:244) and 'add' operation ('add_ln243', poly1305/poly1305_hw.cpp:243).
+WARNING: [SCHED 204-68] The II Violation in module 'poly1305_hw' (Loop: Loop 6.2.3): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between 'select' operation ('select_ln244_15', poly1305/poly1305_hw.cpp:244) and 'add' operation ('add_ln243', poly1305/poly1305_hw.cpp:243).
+WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('temp_load_1', poly1305/poly1305_hw.cpp:243) on array 'temp', poly1305/poly1305_hw.cpp:201 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'temp'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 20, Depth = 20.
+WARNING: [SCHED 204-21] Estimated clock period (10.644ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'poly1305_hw' consists of the following:
+	'mul' operation of DSP[5812] ('mul_ln382_2', poly1305/poly1305_hw.cpp:382) [5810]  (2.84 ns)
+	'add' operation of DSP[5812] ('add_ln382_1', poly1305/poly1305_hw.cpp:382) [5812]  (2.75 ns)
+	'icmp' operation ('icmp_ln383_2', poly1305/poly1305_hw.cpp:383) [5814]  (1.12 ns)
+	multiplexor before 'phi' operation ('mulCarry42_1_0_2', poly1305/poly1305_hw.cpp:384) with incoming values : ('trunc_ln384_2', poly1305/poly1305_hw.cpp:384) [5820]  (1.18 ns)
+	'phi' operation ('mulCarry42_1_0_2', poly1305/poly1305_hw.cpp:384) with incoming values : ('trunc_ln384_2', poly1305/poly1305_hw.cpp:384) [5820]  (0 ns)
+	'add' operation of DSP[5826] ('add_ln382_2', poly1305/poly1305_hw.cpp:382) [5826]  (2.75 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 705.703 seconds; current allocated memory: 491.932 MB.
+INFO: [HLS 200-434] Only 4 loops out of a total 40 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 115.148 seconds; current allocated memory: 595.645 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'poly1305_hw' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'poly1305_hw/input_stream_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'poly1305_hw/input_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'poly1305_hw/result_stream_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'poly1305_hw/result_stream_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'poly1305_hw' to 'ap_ctrl_none'.
+INFO: [SYN 201-210] Renamed object name 'poly1305_hw_fullArr_1' to 'poly1305_hw_fullAbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'poly1305_hw_textBlock' to 'poly1305_hw_textBcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'poly1305_hw_fullArr_2' to 'poly1305_hw_fullAdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'poly1305_hw_mux_325_8_1_1' to 'poly1305_hw_mux_3eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'poly1305_hw_mux_646_8_1_1' to 'poly1305_hw_mux_6fYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'poly1305_hw_mux_100010_8_1_1' to 'poly1305_hw_mux_1g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'poly1305_hw_mux_164_8_1_1' to 'poly1305_hw_mux_1hbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'poly1305_hw_mac_muladd_8ns_8ns_8ns_16_1_1' to 'poly1305_hw_mac_mibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'poly1305_hw_mac_muladd_8ns_4ns_4ns_12_1_1' to 'poly1305_hw_mac_mjbC' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'poly1305_hw_mac_mibs': 400 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'poly1305_hw_mac_mjbC': 128 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'poly1305_hw_mux_1g8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'poly1305_hw_mux_1hbi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'poly1305_hw_mux_3eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'poly1305_hw_mux_6fYi': 30 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'poly1305_hw'.
+INFO: [HLS 200-111]  Elapsed time: 80.441 seconds; current allocated memory: 736.960 MB.
+INFO: [RTMG 210-279] Implementing memory 'poly1305_hw_arr2_rom' using distributed ROMs.
+INFO: [RTMG 210-278] Implementing memory 'poly1305_hw_s_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'poly1305_hw_acc_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'poly1305_hw_arr1_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'poly1305_hw_temp_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'poly1305_hw_fullArr_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'poly1305_hw_textBcud_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'poly1305_hw_accSum_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'poly1305_hw_mul_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:16:19 ; elapsed = 00:17:09 . Memory (MB): peak = 1412.934 ; gain = 1321.480
+INFO: [VHDL 208-304] Generating VHDL RTL for poly1305_hw.
+INFO: [VLOG 209-307] Generating Verilog RTL for poly1305_hw.
+INFO: [HLS 200-112] Total elapsed time: 1029.21 seconds; peak allocated memory: 736.960 MB.

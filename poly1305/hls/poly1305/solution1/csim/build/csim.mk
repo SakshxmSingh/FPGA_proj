@@ -20,7 +20,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../poly1305_tb.cpp ../../../.apc/.src/poly1305_hw.cpp
+HLS_SOURCES = ../../../../poly1305_tb.cpp ../../../poly1305_hw.cpp
 
 TARGET := csim.exe
 
@@ -59,6 +59,7 @@ IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 
 IFLAG += -D__DSP48E1__
+IFLAG += -Wno-unknown-pragmas 
 IFLAG += -g
 IFLAG += -DNT
 LFLAG += -Wl,--enable-auto-import 
@@ -76,12 +77,12 @@ all: $(TARGET)
 
 $(ObjDir)/poly1305_tb.o: ../../../../poly1305_tb.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../poly1305_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/poly1305_tb.d
 
-$(ObjDir)/poly1305_hw.o: ../../../.apc/.src/poly1305_hw.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../.apc/.src/poly1305_hw.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/poly1305_hw.o: ../../../poly1305_hw.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../poly1305_hw.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/poly1305_hw.d

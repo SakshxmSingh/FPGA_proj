@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'poly1305_hw'" level="0">
-<item name = "Date">Mon Jul 31 18:35:52 2023
+<item name = "Date">Wed Aug  2 03:15:36 2023
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">poly1305</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.611, 1.25</column>
+<column name="ap_clk">10.00, 10.644, 1.25</column>
 </table>
 </item>
 </section>
@@ -36,73 +36,45 @@
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- Loop 1">?, ?, 1, -, -, ?, no</column>
-<column name="- Loop 2">?, ?, 1, -, -, ?, no</column>
-<column name="- Loop 3">32, 32, 1, -, -, 32, no</column>
-<column name="- Loop 4">32, 32, 2, -, -, 16, no</column>
+<column name="- Loop 2">?, ?, 2, -, -, ?, no</column>
+<column name="- Loop 3">64, 64, 2, -, -, 32, no</column>
+<column name="- Loop 4">48, 48, 3, -, -, 16, no</column>
 <column name="- memset_acc">16, 16, 1, -, -, 17, no</column>
 <column name="- Loop 6">?, ?, ?, -, -, ?, no</column>
-<column name=" + Loop 6.1">32, 32, 2, -, -, 16, no</column>
-<column name=" + Loop 6.2">34, 34, 2, -, -, 17, no</column>
-<column name=" + Loop 6.3">33, 33, 1, -, -, 33, no</column>
-<column name=" + Loop 6.4">1408, 1680, 88 ~ 105, -, -, 16, no</column>
-<column name="  ++ Loop 6.4.1">85, 102, 5 ~ 6, -, -, 17, no</column>
-<column name=" + Loop 6.5">66, 66, 2, -, -, 33, no</column>
-<column name=" + Loop 6.6">2, 67, 2, -, -, 1 ~ 33, no</column>
-<column name=" + Loop 6.7">?, ?, 2, -, -, ?, no</column>
-<column name=" + Loop 6.8">2, 67, 2, -, -, 1 ~ 33, no</column>
-<column name=" + Loop 6.9">?, ?, ?, -, -, ?, no</column>
-<column name="  ++ Loop 6.9.1">0, 32, 1, -, -, 0 ~ 32, no</column>
-<column name="  ++ Loop 6.9.2">51, 68, 3 ~ 4, -, -, 17, no</column>
-<column name="  ++ Loop 6.9.3">0, 15, 1, -, -, 0 ~ 15, no</column>
-<column name="  ++ Loop 6.9.4">0, 2085, 105 ~ 139, -, -, 0 ~ 15, no</column>
-<column name="   +++ Loop 6.9.4.1">102, 136, 6 ~ 8, -, -, 17, no</column>
-<column name="  ++ Loop 6.9.5">54, 252, 3 ~ 4, -, -, 18 ~ 63, no</column>
-<column name="  ++ Loop 6.9.6">96, 96, 3, -, -, 32, no</column>
-<column name="  ++ Loop 6.9.7">2, 67, 2, -, -, 1 ~ 33, no</column>
-<column name="  ++ Loop 6.9.8">?, ?, 2, -, -, ?, no</column>
-<column name=" + Loop 6.10">34, 34, 2, -, -, 17, no</column>
+<column name=" + Loop 6.1">?, ?, 2, -, -, ?, no</column>
+<column name=" + Loop 6.2">?, ?, ?, -, -, ?, no</column>
+<column name="  ++ Loop 6.2.1">0, 32, 1, -, -, 0 ~ 32, no</column>
+<column name="  ++ Loop 6.2.2">0, 15, 1, -, -, 0 ~ 15, no</column>
+<column name="  ++ Loop 6.2.3">0, 300, 20, 20, 1, 0 ~ 15, yes</column>
+<column name="  ++ Loop 6.2.4">54, ?, 3 ~ 4, -, -, 18 ~ ?, no</column>
+<column name="  ++ Loop 6.2.5">?, ?, 2, -, -, ?, no</column>
 <column name="- Loop 7">?, ?, ?, -, -, ?, no</column>
-<column name=" + Loop 7.1">32, 32, 2, -, -, 16, no</column>
-<column name=" + Loop 7.2">34, 34, 2, -, -, 17, no</column>
-<column name=" + Loop 7.3">33, 33, 1, -, -, 33, no</column>
-<column name=" + Loop 7.4">1408, 1680, 88 ~ 105, -, -, 16, no</column>
-<column name="  ++ Loop 7.4.1">85, 102, 5 ~ 6, -, -, 17, no</column>
-<column name=" + Loop 7.5">66, 66, 2, -, -, 33, no</column>
-<column name=" + Loop 7.6">2, 67, 2, -, -, 1 ~ 33, no</column>
-<column name=" + Loop 7.7">?, ?, 2, -, -, ?, no</column>
-<column name=" + Loop 7.8">2, 67, 2, -, -, 1 ~ 33, no</column>
-<column name=" + Loop 7.9">?, ?, ?, -, -, ?, no</column>
-<column name="  ++ Loop 7.9.1">0, 32, 1, -, -, 0 ~ 32, no</column>
-<column name="  ++ Loop 7.9.2">51, 68, 3 ~ 4, -, -, 17, no</column>
-<column name="  ++ Loop 7.9.3">0, 15, 1, -, -, 0 ~ 15, no</column>
-<column name="  ++ Loop 7.9.4">0, 2085, 105 ~ 139, -, -, 0 ~ 15, no</column>
-<column name="   +++ Loop 7.9.4.1">102, 136, 6 ~ 8, -, -, 17, no</column>
-<column name="  ++ Loop 7.9.5">54, 252, 3 ~ 4, -, -, 18 ~ 63, no</column>
-<column name="  ++ Loop 7.9.6">96, 96, 3, -, -, 32, no</column>
-<column name="  ++ Loop 7.9.7">2, 67, 2, -, -, 1 ~ 33, no</column>
-<column name="  ++ Loop 7.9.8">?, ?, 2, -, -, ?, no</column>
-<column name=" + Loop 7.10">34, 34, 2, -, -, 17, no</column>
-<column name="- Loop 8">0, 30, 2, -, -, 0 ~ 15, no</column>
+<column name=" + Loop 7.1">?, ?, 2, -, -, ?, no</column>
+<column name=" + Loop 7.2">?, ?, ?, -, -, ?, no</column>
+<column name="  ++ Loop 7.2.1">0, 32, 1, -, -, 0 ~ 32, no</column>
+<column name="  ++ Loop 7.2.2">0, 15, 1, -, -, 0 ~ 15, no</column>
+<column name="  ++ Loop 7.2.3">0, 300, 20, 20, 1, 0 ~ 15, yes</column>
+<column name="  ++ Loop 7.2.4">54, ?, 3 ~ 4, -, -, 18 ~ ?, no</column>
+<column name="  ++ Loop 7.2.5">?, ?, 2, -, -, ?, no</column>
+<column name="- Loop 8">0, 15, 1, -, -, 0 ~ 15, no</column>
 <column name="- Loop 9">?, ?, 1, -, -, ?, no</column>
 <column name="- Loop 10">34, 34, 2, -, -, 17, no</column>
 <column name="- Loop 11">33, 33, 1, -, -, 33, no</column>
-<column name="- Loop 12">1408, 1680, 88 ~ 105, -, -, 16, no</column>
-<column name=" + Loop 12.1">85, 102, 5 ~ 6, -, -, 17, no</column>
+<column name="- Loop 12">304, 304, 19, 19, 1, 16, yes</column>
 <column name="- Loop 13">66, 66, 2, -, -, 33, no</column>
 <column name="- Loop 14">2, 67, 2, -, -, 1 ~ 33, no</column>
 <column name="- Loop 15">?, ?, ?, -, -, ?, no</column>
 <column name=" + Loop 15.1">0, 32, 1, -, -, 0 ~ 32, no</column>
 <column name=" + Loop 15.2">51, 68, 3 ~ 4, -, -, 17, no</column>
 <column name=" + Loop 15.3">0, 15, 1, -, -, 0 ~ 15, no</column>
-<column name=" + Loop 15.4">0, 2085, 105 ~ 139, -, -, 0 ~ 15, no</column>
-<column name="  ++ Loop 15.4.1">102, 136, 6 ~ 8, -, -, 17, no</column>
+<column name=" + Loop 15.4">0, 300, 20, 20, 1, 0 ~ 15, yes</column>
 <column name=" + Loop 15.5">54, 128, 3 ~ 4, -, -, 18 ~ 32, no</column>
 <column name=" + Loop 15.6">96, 96, 3, -, -, 32, no</column>
 <column name=" + Loop 15.7">2, 67, 2, -, -, 1 ~ 33, no</column>
 <column name=" + Loop 15.8">?, ?, 2, -, -, ?, no</column>
 <column name="- Loop 16">34, 34, 2, -, -, 17, no</column>
 <column name="- Loop 17">32, 32, 2, -, -, 16, no</column>
-<column name="- Loop 18">32, 32, 2, -, -, 16, no</column>
+<column name="- Loop 18">48, 48, 3, -, -, 16, no</column>
 </table>
 </item>
 </section>

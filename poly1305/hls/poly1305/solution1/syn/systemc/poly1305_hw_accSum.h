@@ -2,8 +2,8 @@
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
-#ifndef __poly1305_hw_key_H__
-#define __poly1305_hw_key_H__
+#ifndef __poly1305_hw_accSum_H__
+#define __poly1305_hw_accSum_H__
 
 
 #include <systemc>
@@ -16,10 +16,10 @@ using namespace sc_dt;
 #include <iostream>
 #include <fstream>
 
-struct poly1305_hw_key_ram : public sc_core::sc_module {
+struct poly1305_hw_accSum_ram : public sc_core::sc_module {
 
   static const unsigned DataWidth = 8;
-  static const unsigned AddressRange = 32;
+  static const unsigned AddressRange = 17;
   static const unsigned AddressWidth = 5;
 
 //latency = 1
@@ -40,7 +40,7 @@ sc_core::sc_in<bool> clk;
 sc_lv<DataWidth> ram[AddressRange];
 
 
-   SC_CTOR(poly1305_hw_key_ram) {
+   SC_CTOR(poly1305_hw_accSum_ram) {
 
 
 SC_METHOD(prc_write_0);
@@ -91,11 +91,11 @@ void prc_write_1()
 }; //endmodule
 
 
-SC_MODULE(poly1305_hw_key) {
+SC_MODULE(poly1305_hw_accSum) {
 
 
 static const unsigned DataWidth = 8;
-static const unsigned AddressRange = 32;
+static const unsigned AddressRange = 17;
 static const unsigned AddressWidth = 5;
 
 sc_core::sc_in <sc_lv<AddressWidth> > address0;
@@ -110,11 +110,11 @@ sc_core::sc_in<sc_logic> reset;
 sc_core::sc_in<bool> clk;
 
 
-poly1305_hw_key_ram* meminst;
+poly1305_hw_accSum_ram* meminst;
 
 
-SC_CTOR(poly1305_hw_key) {
-meminst = new poly1305_hw_key_ram("poly1305_hw_key_ram");
+SC_CTOR(poly1305_hw_accSum) {
+meminst = new poly1305_hw_accSum_ram("poly1305_hw_accSum_ram");
 meminst->address0(address0);
 meminst->ce0(ce0);
 meminst->q0(q0);
@@ -128,7 +128,7 @@ meminst->q1(q1);
 meminst->reset(reset);
 meminst->clk(clk);
 }
-~poly1305_hw_key() {
+~poly1305_hw_accSum() {
     delete meminst;
 }
 
